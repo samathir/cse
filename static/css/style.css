@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+}
+account{
+    float: left;
+    width: 30%;
+    height: 750px;
+    padding: 20px;
+    background-color: #86cfda;
+}
+right{
+    float: right;
+    padding: 375px;
+    width: 70%;
+    background-color: #f1f1f1;
+    background-image: url("cat.jpg");
+    background-size: 100% 100%;
+}
+@media (max-width: 600px) {
+    nav, body {
+        width: 100%;
+        height: auto;
+    }
+}

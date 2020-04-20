@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+</head>
+<body>
+  
+  <table border="1">
+    <tr>
+
+      <th>Name</th>
+      <th>Like</th>
+      <th>Comments</th>
+
+    </tr>
+
+    {% for lines in folder %}
+    <tr>  
+      <td>{{lines.name}}</td>
+      <td>{{lines.like}}</td>
+      <td>{{lines.comments}}</td>
+    </tr>
+    {% endfor %}
+  </table>
+  </br></br>
+  
+  <table border="1">
+    <tr>
+
+      <th>ID</th>
+      <th>Message</th>
+      <th>Like</th>
+      <th>Comments</th>
+      <th>Time</th>
+
+    </tr>
+
+    {% for wlines in wfolder %}
+    <tr>  
+      <td>{{wlines.word_id}}</td>
+      <td>{{wlines.message}}</td>
+      <td>{{wlines.like}}</td>
+      <td>{{wlines.comments}}</td>
+      <td>{{wlines.datetime}}</td>
+    </tr>
+    {% endfor %}
+  </table>
+
+</br></br>
+
+    <table border="1">
+       <tr>
+
+      <th>name</th>
+      <th>like</th>
+      <th>comment</th>
+
+    </tr>
+  {% for file in filefolder %}
+    <tr>  
+      <td>{{file.name}}</td>
+      <td>{{file.like}}</td>
+      <td>{{file.comments}}</td>
+
+    </tr>
+    {% endfor %}
+     </table>
+</body>    
